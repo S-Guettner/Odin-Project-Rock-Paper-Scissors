@@ -59,20 +59,9 @@ function gamePlay(computerSelection,playerSelection){
         
 }
 
-function game(){
 
-for (let i = 0; i < 5; i++) {
 
-    
 
-    let playerInput = window.prompt("Your Weapon of choice?");
-    let playerSelection = playerInput.toLowerCase();
-    let computerSelection = computerPlay();
-    console.log(gamePlay(computerSelection,playerSelection));
-    
- }
-
-}
 
 console.log(game());
 
