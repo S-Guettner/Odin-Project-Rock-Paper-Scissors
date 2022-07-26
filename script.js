@@ -8,6 +8,31 @@ function computerPlay(){
 
 
 
+
+
+//! Changing Playerselection Variable value to "rock" , "paper" or "scissor" after click on button !//
+
+let playerSelection;
+function playerInput(){
+    if (document.getElementById("rock").clicked == true)
+    playerSelection = "rock";
+
+    else if (document.getElementById("paper").clicked == true)
+    playerSelection = "paper";
+
+    else if (document.getElementById("scissor").clicked == true)
+    playerSelection = "scissor";
+}   
+
+
+//! Changing Playerselection Variable value to "rock" , "paper" or "scissor" after click on button !//
+
+
+
+
+
+
+
 function gamePlay(computerSelection,playerSelection){
 
     if (computerSelection == "rock" && playerSelection == "paper"){
@@ -63,6 +88,6 @@ function gamePlay(computerSelection,playerSelection){
 
 
 
-console.log(game());
+console.log(playerInput());
 
 
