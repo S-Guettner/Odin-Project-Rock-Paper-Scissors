@@ -24,16 +24,16 @@ body{
     justify-content: space-evenly;
 }
 
-#rockButton{
+#rock{
     font-size: 50px;
     
 }
 
-#paperButton{
+#paper{
     font-size: 50px;
     
 }
 
-#scissorButton{
+#scissor{
     font-size: 50px;
 }
