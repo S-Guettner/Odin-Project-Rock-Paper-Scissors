@@ -1,34 +1,32 @@
-itemsArray = ["stone","paper","scissor"];
+
 
 
  /* Function returns random item from itemsArray */
 function computerPlay(){
-   return itemsArray[Math.floor(Math.random()*itemsArray.length)];
-}
-
-
-
-
-
-//! Changing Playerselection Variable value to "rock" , "paper" or "scissor" after click on button !//
-
-var playerInput ="random";
-
-function playerSelection (choice){
-    playerInput=choice;
-
-}
-
-console.log(playerInput)
-
-   
-   
     
+    itemsArray = ["stone","paper","scissor"];
+    return itemsArray[Math.floor(Math.random()*itemsArray.length)];
+}
 
 
 
 
-//! Changing Playerselection Variable value to "rock" , "paper" or "scissor" after click on button !//
+//! Changing PlayerSelection to "rock" , "paper" or "scissor" after click on button !//
+
+
+
+   
+function changePlayerSelectionVar(input){
+
+    
+    playerSelection = input;
+    console.log(playerSelection);
+}
+
+
+
+
+//! Changing PlayerSelection to "rock" , "paper" or "scissor" after click on button !//
 
 
 
