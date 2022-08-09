@@ -7,32 +7,37 @@ function gamePlay(playerInput){
 
 /* computerSelection = random item of itemsArray */    
 
-    itemsArray = ["stone","paper","scissor"];
-    computerSelection = itemsArray[Math.floor(Math.random()*itemsArray.length)];
+    let itemsArray = ["rock","paper","scissor"];
+    let computerSelection = itemsArray[Math.floor(Math.random()*itemsArray.length)];
 
 /* computerSelection = random item of itemsArray */        
 
-playerSelection = playerInput;
-console.log(playerInput);
+
+
+/*Input from Button */
+let playerSelection = playerInput;
+
+console.log(playerInput)
+
 
 /* game mechanic */
 
-    if (computerSelection === "rock" && playerSelection === "paper"){
-        return "You Win! Paper beats Rock.";}
+    if (computerSelection == "rock" && playerSelection == "paper"){
+        return "You Win! Paper beats Rock."}
     
 
     else if (computerSelection == "rock" && playerSelection == "scissor"){
-    return "You Lose! Rock beats scissor.";}
+        return "You Lose! Rock beats scissor.";}
 
   
 
     else if (computerSelection == "rock" && playerSelection == "rock"){
-    return "No Winner!";}
+        return "No Winner!";}
 
    
     
     else if (computerSelection == "paper" && playerSelection == "paper"){
-    return "No Winner!";}
+        return "No Winner!";}
 
    
     
@@ -48,7 +53,7 @@ console.log(playerInput);
 
 
      else if (computerSelection == "scissor" && playerSelection == "rock"){
-    return "You Win! Rock beats scissor.";}
+        return "You Win! Rock beats scissor.";}
 
 
     
@@ -56,12 +61,13 @@ console.log(playerInput);
         return "You Lose! Scissor beats Paper.";}
 
 
+    
     else if (computerSelection == "scissor" && playerSelection == "scissor"){
         return "No Winner!.";}        
     
-        else {
+    else {
 
-            return "Wrong Input!!!!!!!!!";}
+        return "Wrong Input!!!!!!!!!";}
         
       /* game mechanic */
 }
@@ -70,6 +76,6 @@ console.log(playerInput);
 
 
 
-
+/* Input working, but function not returning result */
 
 
