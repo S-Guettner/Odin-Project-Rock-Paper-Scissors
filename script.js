@@ -12,60 +12,58 @@ function gamePlay(playerInput){
 
 /* computerSelection = random item of itemsArray */        
 
-
+let outcome = document.querySelector('.score');
+console.log(outcome.textContent);
 
 /*Input from Button */
 let playerSelection = playerInput;
 
 if (computerSelection == "rock" && playerSelection == "paper"){
-    console.log("You Win Paper beats Rock")  }
+    outcome.textContent = "You Win Paper beats Rock"  }
 
 
 else if (computerSelection == "rock" && playerSelection == "scissor"){
-    console.log("You Lose! Rock beats scissor.") }
+    outcome.textContent = "You Lose! Rock beats scissor." }
 
 
 
 else if (computerSelection == "rock" && playerSelection == "rock"){
-    console.log("No Winner!")  }
+    outcome.textContent = "No Winner!"  }
 
 
 
 else if (computerSelection == "paper" && playerSelection == "paper"){
-    console.log("No Winner!")  }
+    outcome.textContent = "No Winner!"  }
 
 
 
 else if (computerSelection == "paper" && playerSelection == "rock"){
-    console.log("You Lose! Paper beats Rock.")  }
+    outcome.textContent = "You Lose! Paper beats Rock."  }
 
    
 
 else if (computerSelection == "paper" && playerSelection == "scissor"){
-    console.log("You Win! Scissor beats Paper.") }    
+    outcome.textContent = "You Win! Scissor beats Paper." }    
 
 
 
 
  else if (computerSelection == "scissor" && playerSelection == "rock"){
-    console.log("You Win! Rock beats scissor.")}
+    outcome.textContent = "You Win! Rock beats scissor."}
 
 
 
 else if (computerSelection == "scissor" && playerSelection == "paper"){
-    console.log("You Lose! Scissor beats Paper.") }
+    outcome.textContent = "You Lose! Scissor beats Paper." }
 
 
 
 else if (computerSelection == "scissor" && playerSelection == "scissor"){
-    console.log("No Winner!.") }     
-
-
-
+    outcome.textContent = "No Winner!" }     
 
 }
 
-/* game mechanic */
+
 
 
 
