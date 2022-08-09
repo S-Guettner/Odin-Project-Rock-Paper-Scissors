@@ -1,42 +1,24 @@
 
 
 
- /* Function returns random item from itemsArray */
-function computerPlay(){
-    
+
+
+function gamePlay(playerInput){
+
+/* computerSelection = random item of itemsArray */    
+
     itemsArray = ["stone","paper","scissor"];
-    return itemsArray[Math.floor(Math.random()*itemsArray.length)];
-}
+    computerSelection = itemsArray[Math.floor(Math.random()*itemsArray.length)];
 
+/* computerSelection = random item of itemsArray */        
 
+playerSelection = playerInput;
+console.log(playerInput);
 
+/* game mechanic */
 
-//! Changing PlayerSelection to "rock" , "paper" or "scissor" after click on button !//
-
-
-
-   
-function changePlayerSelectionVar(input){
-
-    
-    playerSelection = input;
-    console.log(playerSelection);
-}
-
-
-
-
-//! Changing PlayerSelection to "rock" , "paper" or "scissor" after click on button !//
-
-
-
-
-
-
-function gamePlay(computerSelection,playerSelection){
-
-    if (computerSelection == "rock" && playerSelection == "paper"){
-    return "You Win! Paper beats Rock.";}
+    if (computerSelection === "rock" && playerSelection === "paper"){
+        return "You Win! Paper beats Rock.";}
     
 
     else if (computerSelection == "rock" && playerSelection == "scissor"){
@@ -81,7 +63,7 @@ function gamePlay(computerSelection,playerSelection){
 
             return "Wrong Input!!!!!!!!!";}
         
-        
+      /* game mechanic */
 }
 
 
