@@ -44,3 +44,16 @@ body{
     font-family: monospace;
     font-size: 30px;
 }
+
+#scoreWrapper{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.scoreWrapper{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+    
