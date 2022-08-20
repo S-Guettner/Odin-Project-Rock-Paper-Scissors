@@ -61,4 +61,10 @@ body{
     display:flex;
     justify-content:space-evenly ;
 }
+
+#resetButtonWrapper{
+    display:flex;
+    justify-content: center;
+    
+}
     

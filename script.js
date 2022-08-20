@@ -84,9 +84,18 @@ else if (computerSelection == "scissor" && playerSelection == "scissor"){
     outcome.textContent = "Scissor VS Scissor No Winner!" }     
 
 
-document.querySelector("#player").textContent = playerScore;
-document.querySelector("#computer").textContent = computerScore;
+    document.querySelector("#player").textContent = playerScore;
+    document.querySelector("#computer").textContent = computerScore;
+    
+
     
 }
 
+function reset(){
+    playerScore=0;
+    computerScore=0;
+    
+    document.querySelector("#player").textContent = playerScore;
+    document.querySelector("#computer").textContent = computerScore;
 
+}
