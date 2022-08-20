@@ -1,9 +1,70 @@
 body{
-    
+    margin:0;
     
 }
 
-.main {
-    background-color: rgb(0, 0, 0);
+.headtitle {
+    background-image:linear-gradient(rgb(0, 0, 0),#33776c8c);
     color:white;
+    display:flex;
+    justify-content: center;
 }
+
+.headtitle h1{
+    font-family: monospace;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    
+}
+
+#wrapperButtons{
+    margin:100px;
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#rock{
+    font-size: 50px;
+    
+}
+
+#paper{
+    font-size: 50px;
+    
+}
+
+#scissor{
+    font-size: 50px;
+}
+
+.score{
+    display:flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+#scoreWrapper{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.scoreWrapper{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+#score{
+    display:flex;
+    justify-content:space-evenly ;
+}
+
+#resetButtonWrapper{
+    display:flex;
+    justify-content: center;
+    
+}
+    

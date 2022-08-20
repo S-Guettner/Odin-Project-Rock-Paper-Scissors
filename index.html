@@ -6,16 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="main">
-        <h1>Hello World</h1>
+    <div class="headtitle">
         
-
+        <h1>Rock Paper Scissor Game</h1>
 
     </div>
-
     
+    <div>
+        <h1 class="score"></h1>
+    </div>
+    
+    <div id="scoreWrapper">
+        <div><h3>Playerscore</h3></div>
+        <div><h3>Computerscore</h3></div>
+    </div>
+    
+    
+    <div id="score">
+    <h3 id="player">0</h3>
+    <h3 id="computer">0</h3>
+    </div>
+    
+    
+    <div id="wrapperButtons">
+
+        
+        <button id="rock" onClick="gamePlay('rock')">✊</button>
+
+        <button id="paper" onClick="gamePlay('paper')">✋</button>
+
+        <button id="scissor" onClick="gamePlay('scissor')">✌️</button>
+        
+    </div>
+
+    <div id="resetButtonWrapper">
+    <button id="resetButton" onClick="reset()">Reset Game</button>
+    </div>
+   
 </body>
 </html>

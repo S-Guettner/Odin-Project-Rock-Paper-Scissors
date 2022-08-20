@@ -1,77 +1,101 @@
-itemsArray = ["stone","paper","scissor"];
+
+/* Score */
+
+let playerScore = 0;
+let computerScore = 0;
+
+function gamePlay(playerInput){
 
 
- /* Function returns random item from itemsArray */
-function computerPlay(){
-   return itemsArray[Math.floor(Math.random()*itemsArray.length)];
-}
+
+/*Score*/
 
 
 
-function gamePlay(computerSelection,playerSelection){
+/* computerSelection = random item of itemsArray */    
 
-    if (computerSelection == "rock" && playerSelection == "paper"){
-    return "You Win! Paper beats Rock.";}
+    let itemsArray = ["rock","paper","scissor"];
+    let computerSelection = itemsArray[Math.floor(Math.random()*itemsArray.length)];
+
+/* computerSelection = random item of itemsArray */        
+
+
+
+let outcome = document.querySelector('.score');
+console.log(outcome.textContent);
+
+
+
+/*Input from Button */
+let playerSelection = playerInput;
+
+
+
+if (computerSelection == "rock" && playerSelection == "paper"){
+    outcome.textContent = "You Win Paper beats Rock" ;
+    playerScore++;
+    }
+    
     
 
-    else if (computerSelection == "rock" && playerSelection == "scissor"){
-    return "You Lose! Rock beats scissor.";}
+else if (computerSelection == "rock" && playerSelection == "scissor"){
+    outcome.textContent = "You Lose! Rock beats scissor."
+    computerScore++; }
+    
 
-  
 
-    else if (computerSelection == "rock" && playerSelection == "rock"){
-    return "No Winner!";}
+else if (computerSelection == "rock" && playerSelection == "rock"){
+    outcome.textContent = "Rock VS Rock No Winner!" 
+    }
+
+
+
+else if (computerSelection == "paper" && playerSelection == "paper"){
+    outcome.textContent = "Paper VS Paper No Winner!"  }
+
+
+
+else if (computerSelection == "paper" && playerSelection == "rock"){
+    outcome.textContent = "You Lose! Paper beats Rock."  
+    computerScore++;}
 
    
+
+else if (computerSelection == "paper" && playerSelection == "scissor"){
+    outcome.textContent = "You Win! Scissor beats Paper." 
+    playerScore++;}    
+
+
+
+
+ else if (computerSelection == "scissor" && playerSelection == "rock"){
+    outcome.textContent = "You Win! Rock beats scissor."
+    playerScore++;}
+
+
+
+else if (computerSelection == "scissor" && playerSelection == "paper"){
+    outcome.textContent = "You Lose! Scissor beats Paper." 
+    computerScore++;}
+
+
+
+else if (computerSelection == "scissor" && playerSelection == "scissor"){
+    outcome.textContent = "Scissor VS Scissor No Winner!" }     
+
+
+    document.querySelector("#player").textContent = playerScore;
+    document.querySelector("#computer").textContent = computerScore;
     
-    else if (computerSelection == "paper" && playerSelection == "paper"){
-    return "No Winner!";}
-
-   
-    
-    else if (computerSelection == "paper" && playerSelection == "rock"){
-        return "You Lose! Paper beats Rock.";}
-
-       
-
-    else if (computerSelection == "paper" && playerSelection == "scissor"){
-        return "You Win! Scissor beats Paper.";}    
-
- 
-
-
-     else if (computerSelection == "scissor" && playerSelection == "rock"){
-    return "You Win! Rock beats scissor.";}
-
 
     
-    else if (computerSelection == "scissor" && playerSelection == "paper"){
-        return "You Lose! Scissor beats Paper.";}
-
-
-    else if (computerSelection == "scissor" && playerSelection == "scissor"){
-        return "No Winner!.";}        
-    
-        else {
-
-            return "Wrong Input!!!!!!!!!";}
-        
-        
 }
 
-function game(){
-
-for (let i = 0; i < 5; i++) {
-
+function reset(){
+    playerScore=0;
+    computerScore=0;
     
-
-    let playerInput = window.prompt("Your Weapon of choice?");
-    let playerSelection = playerInput.toLowerCase();
-    let computerSelection = computerPlay();
-    console.log(gamePlay(computerSelection,playerSelection));
-    
- }
+    document.querySelector("#player").textContent = playerScore;
+    document.querySelector("#computer").textContent = computerScore;
 
 }
-
-console.log(game());
